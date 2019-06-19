@@ -1,6 +1,5 @@
 {
   "trailingComma": "all",
-  "jsxBracketSameLine": true,
   "singleQuote": true,
   "parser": "typescript"
 }

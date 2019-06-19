@@ -11,10 +11,7 @@
     ],
   ],
   "plugins": [
-    ["@babel/plugin-transform-react-jsx", {
-      "pragma": "h",
-      "pragmaFlag": "Fragment"
-    }],
-    ["styled-jsx/babel"]
+    "styled-jsx/babel",
+    "react-hot-loader/babel"
   ]
 }
