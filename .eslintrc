@@ -29,7 +29,7 @@
     }
   },
   "rules": {
-    "raect/props-types": "off",
+    "react/props-types": "off",
     "react/destructuring-assignment": "off",
     "no-ternary": "off",
     "jsx-a11y/no-static-element-interactions": "off",
@@ -39,7 +39,7 @@
       "allowTypedFunctionExpressions": true
     }],
     "@typescript-eslint/no-explicit-any": "off",
-    "raect-hooks/rules-of-hooks": "error",
+    "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn"
   },
   "globals": {
