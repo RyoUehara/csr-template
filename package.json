@@ -1,7 +1,7 @@
 {
   "name": "csr-template",
   "version": "0.0.0",
-  "description": "CSR(Client Side Rendering) with React",
+  "description": "CSR(Client Side Rendering) Template",
   "private": true,
   "main": "index.tsx",
   "scripts": {
