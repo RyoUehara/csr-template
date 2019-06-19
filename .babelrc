@@ -1,0 +1,17 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "ie": "11",
+          "node": "current"
+        },
+      }
+    ],
+  ],
+  "plugins": [
+    "styled-jsx/babel",
+    "react-hot-loader/babel"
+  ]
+}

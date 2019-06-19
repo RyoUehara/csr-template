@@ -1,0 +1,49 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "jest": true,
+    "es6": true
+  },
+  "extends": [
+    "airbnb",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "react-hooks"
+  ],
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.config.babel.js"
+      }
+    }
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "react/props-types": "off",
+    "react/destructuring-assignment": "off",
+    "no-ternary": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "@typescript-eslint/indent": "off",
+    "@typescript-eslint/explicit-function-return-type": [1, {
+      "allowTypedFunctionExpressions": true
+    }],
+    "@typescript-eslint/no-explicit-any": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  },
+  "globals": {
+    "window": true,
+    "docuemnt": true
+  }
+}
