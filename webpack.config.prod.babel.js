@@ -10,7 +10,7 @@ export default merge(common, {
     chunkFilename: '[name]-[chunkhash].js'
   },
   plugins: [
-    new CleanWebpackPlugin(['dist'])
+    new CleanWebpackPlugin()
   ],
   optimization: {
     splitChunks: {
