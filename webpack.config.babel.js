@@ -1,6 +1,7 @@
 import webpack from 'webpack';
 import path from "path";
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
 
 export default {
   context: path.resolve(__dirname, 'src'),
@@ -15,7 +16,15 @@ export default {
   module: {
     rules: [{
       test: /\.(ts|tsx)?$/,
-      use: ['babel-loader', 'ts-loader'],
+      use: [
+        'babel-loader',
+        {
+          loader: 'ts-loader',
+          options: {
+            transpileOnly: true
+          }
+        }
+      ],
       exclude: /node_modules/
     }]
   },
@@ -29,6 +38,9 @@ export default {
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html'
+    }),
+    new ForkTsCheckerWebpackPlugin({
+      tsconfig: path.resolve(__dirname, 'tsconfig.json')
     })
   ]
 };
