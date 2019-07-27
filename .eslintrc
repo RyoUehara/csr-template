@@ -29,21 +29,37 @@
     }
   },
   "rules": {
-    "react/props-types": "off",
-    "react/destructuring-assignment": "off",
-    "no-ternary": "off",
+    "import/prefer-default-export": "off",
     "jsx-a11y/no-static-element-interactions": "off",
     "jsx-a11y/click-events-have-key-events": "off",
+    "no-new": "off",
+    "no-plusplus": "off",
+    "no-ternary": "off",
+    "react/props-types": "off",
+    "react/destructuring-assignment": "off",
+    "react/jsx-filename-extension": [2, {
+      "extensions": [".tsx"]
+    }],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
     "@typescript-eslint/indent": "off",
     "@typescript-eslint/explicit-function-return-type": [1, {
       "allowTypedFunctionExpressions": true
     }],
     "@typescript-eslint/no-explicit-any": "off",
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn"
+    "@typescript-eslint/explicit-member-accessibility": [2, {
+      "accessibility": "explicit",
+      "overrides": {
+        "accessors": "explicit",
+        "constructors": "no-public",
+        "methods": "off",
+        "properties": "off",
+        "parameterProperties": "explicit"
+      }
+    }],
   },
   "globals": {
-    "window": true,
+    "window": false,
     "docuemnt": true
   }
 }
