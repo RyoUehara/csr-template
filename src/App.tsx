@@ -1,11 +1,15 @@
-import React, { ReactElement, Fragment } from 'react';
+import React, { ReactElement } from 'react';
 
 import Appbar from '$components/Appbar';
-import Style from './Style';
+
+import Counter from './Counter';
+
+import GlobalStyle from './GlobalStyle';
 
 export default (): ReactElement => (
-  <Fragment>
+  <>
     <Appbar />
-    <Style />
-  </Fragment>
+    <Counter />
+    <GlobalStyle />
+  </>
 );
