@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { resolve } from 'styled-jsx/css';
 
 import Card from '$components/Card';
 import Button from '$components/Button';
@@ -22,32 +21,15 @@ const Count: React.FC<{
   </div>
 );
 
-const button = resolve`
-  div.root {
-    margin-right: 16px;
-  }
-
-  div.root:last-child {
-    margin-right: 0px;
-  }
-`;
-
 const Actions: React.FC<{
   add: () => void;
   minus: () => void;
   reset: () => void;
 }> = ({ add, minus, reset }) => (
   <div className="root">
-    <Button className={button.className} onClick={add}>
-      Add
-    </Button>
-    <Button className={button.className} onClick={minus}>
-      Minus
-    </Button>
-    <Button className={button.className} onClick={reset}>
-      Clear
-    </Button>
-    {button.styles}
+    <Button onClick={add}>Add</Button>
+    <Button onClick={minus}>Minus</Button>
+    <Button onClick={reset}>Reset</Button>
     <style jsx>
       {`
         .root {
@@ -92,7 +74,6 @@ export default () => {
         {`
           .root {
             width: 300px;
-            margin: 0px auto;
           }
         `}
       </style>

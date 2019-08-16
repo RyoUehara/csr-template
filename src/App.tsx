@@ -1,15 +1,12 @@
 import React, { ReactElement } from 'react';
 
-import Appbar from '$components/Appbar';
-
-import Counter from './Counter';
+import Router from './Router';
 
 import GlobalStyle from './GlobalStyle';
 
 export default (): ReactElement => (
   <>
-    <Appbar />
-    <Counter />
+    <Router />
     <GlobalStyle />
   </>
 );

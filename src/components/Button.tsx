@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface Button extends React.HTMLProps<HTMLButtonElement> {}
+interface Button extends React.HTMLProps<HTMLDivElement> {}
 
 export default (props: Button) => {
   const { className, ..._props } = props;
