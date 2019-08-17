@@ -4,8 +4,8 @@ import { BrowserRouter, Route } from 'react-router-dom';
 
 import Appbar from '$components/Appbar';
 
-import Hello from './Hello';
-import Counter from './Counter';
+import Hello from './pages/Hello';
+import Counter from './pages/Counter';
 
 export default () => (
   <BrowserRouter>
