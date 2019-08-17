@@ -8,7 +8,7 @@ import { useMount } from '$util/hooks';
 const Count: React.FC<{
   count: number;
 }> = ({ count }) => (
-  <div className="root">
+  <div className="root" data-testid="count">
     {count}
     <style jsx>
       {`
@@ -27,9 +27,15 @@ const Actions: React.FC<{
   reset: () => void;
 }> = ({ add, minus, reset }) => (
   <div className="root">
-    <Button onClick={add}>Add</Button>
-    <Button onClick={minus}>Minus</Button>
-    <Button onClick={reset}>Reset</Button>
+    <Button onClick={add} data-testid="add-button">
+      Add
+    </Button>
+    <Button onClick={minus} data-testid="minus-button">
+      Minus
+    </Button>
+    <Button onClick={reset} data-testid="reset-button">
+      Reset
+    </Button>
     <style jsx>
       {`
         .root {

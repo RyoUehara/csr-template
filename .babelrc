@@ -14,5 +14,19 @@
   "plugins": [
     "styled-jsx/babel",
     "react-hot-loader/babel"
-  ]
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "node": "current"
+            },
+          }
+        ],
+      ],
+    }
+  }
 }
